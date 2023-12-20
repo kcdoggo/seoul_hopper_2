@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Seoul Hopper</string>
+    <string name="concert">콘서트</string>
+    <string name="classic">클래식</string>
+    <string name="musical">뮤지컬</string>
+    <string name="korean">국악</string>
+    <string name="exhibition">전시</string>
+    <string name="activity">체험</string>
+
+</resources>
+

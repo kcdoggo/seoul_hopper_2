@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/concert"
+        android:layout_width="91dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/concert"
+        android:text="@string/concert"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/classic"
+        android:layout_width="84dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/concert"
+        android:text="@string/classic"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/musical"
+        android:layout_width="87dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="268dp"
+        android:layout_marginTop="148dp"
+        android:background="@drawable/concert"
+        android:text="@string/musical"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/korean"
+        android:layout_width="87dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="144dp"
+        android:background="@drawable/concert"
+        android:text="@string/korean"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/exhibition"
+        android:layout_width="87dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="144dp"
+        android:background="@drawable/concert"
+        android:text="@string/exhibition"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/activity0"
+        android:layout_width="87dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/concert"
+        android:text="@string/activity"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/classic"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="activity0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
